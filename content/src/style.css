@@ -1,0 +1,6 @@
+.hoverTrack{
+    outline: rgb(86, 210, 170) dashed 2px !important;
+}
+.clickTrack{
+    outline: rgb(183, 0, 22) dashed 2px !important;
+}

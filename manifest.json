@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Start Page Extension",
+  "description": "Start Page Extension",
+  "version": "1.0",
+  "background": {
+    "page": "watch.html",
+    "persistent": true
+  },
+  "chrome_url_overrides": {
+    "newtab": "startup.html"
+  },
+  "browser_action": {
+    "default_icon": {                 
+      "16": "pop.ico",           
+      "24": "pop.ico",          
+      "32": "pop.ico"            
+    },
+    "default_title": "Start Page Extension"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "<all_urls>",
+    "contextMenus",
+    "storage",
+    "unlimitedStorage",
+    "activeTab",
+    "tabs",
+    "notifications"
+],
+"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

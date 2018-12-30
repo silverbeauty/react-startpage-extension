@@ -1,0 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Material+Icons);
+
+.search-bar{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 120%;
+    line-height: 120%;
+    margin: 0 auto;
+    table{
+        margin: 0 auto;
+        td{
+            display: flex;
+            .input{
+                font-size: 1.5em;
+                height: 50px;
+                width:30em;
+                padding-top: 15px;
+                display: inline-flex;
+                background: 0;
+                border: 0;
+                border-bottom: 2px solid #000;
+                color: #fff;
+                font-weight: 500;
+                outline: 0;
+                text-align: start;
+                padding-left: 10px;
+                transition: border-color .2s ease;
+            }
+            button{
+                border: 0px solid #fff;
+                background-color: white;
+                font-size: 0.7em;
+                .material-icons{
+                    font-size: 3em;
+                }
+            }
+        }
+    }    
+}
